@@ -1,0 +1,173 @@
+---
+layout: default
+title: Portfolio
+---
+
+<div class="home">
+
+  <!-- About me -->
+<div class="block">
+    <div class="block-header">
+      <h2>About me</h2>
+      <a href="/about">Read more</a>
+    </div>
+<div class="block-content">
+      <p>
+        I'm a French student interested in experimenting with computers.
+      </p>
+      <p>
+      Most of my work is related to video games, as a result I also like to share my passion by facilitating workshops.
+      </p>
+      <p>
+      This is my portfolio, feel free to explore it.
+      </p>
+    </div>
+  </div>
+
+   <!-- Video games -->
+  <div class="block">
+    <div class="block-header">
+      <h2>Video games</h2>
+    </div>
+    <div class="block-content">
+      {% assign projects = site.projects | sort: 'date' | reverse %}
+      {% for post in projects %}
+
+        {% if post.videogames %}
+          <article class="project">
+
+            {% if post.direct %}
+            <a href="{{ post.direct }}">
+            {% else %}
+            <a href="{{ site.url }}{{ post.url }}">
+            {% endif %}
+
+              <div class="project-left">
+                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+              </div>
+              <div class="project-right">
+                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+              </div>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+ <!-- Workshops -->
+<div class="block">
+  <div class="block-header">
+    <h2>Workshops</h2>
+  </div>
+  <div class="block-content">
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for post in projects %}
+
+      {% if post.workshops %}
+        <article class="project">
+
+          {% if post.direct %}
+          <a href="{{ post.direct }}">
+          {% else %}
+          <a href="{{ site.url }}{{ post.url }}">
+          {% endif %}
+
+            <div class="project-left">
+              <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+            </div>
+            <div class="project-right">
+              <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Other -->
+<div class="block">
+ <div class="block-header">
+   <h2>Archive</h2>
+ </div>
+ <div class="block-content">
+   {% assign projects = site.projects | sort: 'date' | reverse %}
+   {% for post in projects %}
+
+     {% if post.archive %}
+       <article class="project">
+
+         {% if post.direct %}
+         <a href="{{ post.direct }}">
+         {% else %}
+         <a href="{{ site.url }}{{ post.url }}">
+         {% endif %}
+
+           <div class="project-left">
+             <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+           </div>
+           <div class="project-right">
+             <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+           </div>
+         </a>
+       </article>
+     {% endif %}
+   {% endfor %}
+ </div>
+</div>
+
+ <!-- All projects
+ <div class="block">
+   <div class="block-header">
+     <h2>All</h2>
+   </div>
+   <div class="block-content">
+     {% assign projects = site.projects | sort: 'date' | reverse %}
+     {% for post in projects %}
+
+       {% if post.highlight %}
+         <article class="project">
+
+           {% if post.direct %}
+           <a href="{{ post.direct }}">
+           {% else %}
+           <a href="{{ site.url }}{{ post.url }}">
+           {% endif %}
+
+             <div class="project-left">
+               <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+             </div>
+             <div class="project-right">
+               <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+             </div>
+           </a>
+         </article>
+       {% endif %}
+     {% endfor %}
+   </div>
+   <div class="block-content">
+     {% assign projects = site.projects | sort: 'date' | reverse %}
+     {% for post in projects %}
+
+       {% unless post.highlight %}
+         <article class="project">
+
+           {% if post.direct %}
+           <a href="{{ post.direct }}">
+           {% else %}
+           <a href="{{ site.url }}{{ post.url }}">
+           {% endif %}
+
+             <div class="project-left">
+               <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+             </div>
+             <div class="project-right">
+               <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+             </div>
+           </a>
+         </article>
+       {% endunless %}
+     {% endfor %}
+   </div>
+ </div> -->
