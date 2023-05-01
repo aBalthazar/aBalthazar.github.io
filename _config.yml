@@ -6,8 +6,6 @@ title: Dylan Le Thénaff
 
 show_drafts: nil
 permalink: /:title/
-url: https://abalthazar.github.io/
-baseurl: /abalthazar.github.io
 
 include: ['_pages']
 exclude: ['README.md', 'LICENSE', 'package.json', 'gulpfile.js', 'node_modules', 'Gemfile', 'Gemfile.lock']
