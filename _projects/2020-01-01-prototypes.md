@@ -9,7 +9,7 @@ archive: yes
 ## 2023 - TETRIS MAKEY MAKEY
 - A Tetris clone playable by pressing sponges hanging from the ceiling.
 
-![tetris-makey-makey-photo-1](/static/content/prototypes/tetris-makey-makey-photo-1.jpg)
+![tetris-makey-makey-photo-1](/static/content/prototypes/tetris-makey-makey-photo-1.png)
 
 
 ## 2021 - [HOLY BLOOD](https://balthazargames.itch.io/holy-blood)
