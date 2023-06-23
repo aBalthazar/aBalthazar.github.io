@@ -7,7 +7,7 @@ videogames: yes
 ---
 *solo project // 2 months*
 
-For a long time, I wanted to make a serious game for children based on the *goose game*. So I presented this idea to a jury and I won a prize which allowed me to pursue the production of this project.
+I wanted to make a serious game for children based on the *goose game*. So I presented this idea to a jury and I won a prize which allowed me to pursue the production of this project.
 
 I was responsible for :
 - **Following the imposed milestones and deadlines**
