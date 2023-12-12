@@ -7,7 +7,7 @@ videogames: yes
 ---
 *solo project // 1 month*
 
-**Jacob's view** is inspired by *Capitalism: Slavery* (2006) a film directed by Ken Jacobs. I made a custom controller based on an Arduino board with four buttons  and a potentiometer capable of exploring a stereoscopic photo of a cotton field in 1907.
+**Jacob's view** is inspired by *Capitalism: Slavery* (2006) a film directed by Ken Jacobs. I made a custom controller based on an Arduino board with four buttons  and a potentiometer capable of exploring a stereoscopic photograph showing a cotton field in 1907.
 
 --> [PLAY](https://balthazargames.itch.io/jacobs-view)
 
